@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arco Iris Pet Shop e Agropecuária em Paulínia/SP. Ração, banho e tosa, acessórios e entrega. Atendimento 4,6★ (150 avaliações).">
+    <meta name="theme-color" content="#7c5cff">
+    <title>Arco Iris Pet Shop | Tudo para o seu pet em Paulínia - SP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <!-- ===== NAV ===== -->
+    <header class="header" id="topo">
+        <!-- Barra de publicidade bíblica (mensagem rotativa + slogan + botão) -->
+        <div class="verse-bar" aria-label="Mensagem bíblica">
+            <div class="container verse-bar-inner">
+                <span class="verse-text" id="verseText">"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito..." — João 3:16</span>
+                <span class="verse-slogan" aria-hidden="true">🕊️ Só Jesus Cristo Salva</span>
+                <a href="https://bibliaoriginal.lovable.app" target="_blank" rel="noopener" class="btn btn-verse">📖 Bíblia Online</a>
+            </div>
+        </div>
+        <div class="container header-inner">
+            <a href="#inicio" class="logo" aria-label="Arco Iris Pet Shop - Início">
+                <img src="LOGO.png" alt="Logotipo Agropecuária Arco Iris" class="logo-img">
+            </a>
+            <nav class="nav" id="nav" aria-label="Navegação principal">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#avaliacoes" class="nav-link">Avaliações</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro ou escuro" title="Alternar tema claro ou escuro">
+                    <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <div class="social-icons" aria-label="Redes sociais e loja">
+                    <a href="https://www.instagram.com/arcoirispetshopoficial/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" title="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/arcoirispetshoppaulinia/?locale=pt_BR" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" title="Facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://www.arcoirispetshop.com.br" target="_blank" rel="noopener" class="social-icon social-shop" aria-label="Loja online" title="Nossa loja">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    </a>
+                </div>
+                <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-whatsapp nav-cta">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.4-.7-2.9-1-4.7-3.5-4.9-3.7-.2-.2-1.2-1.5-1.2-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.1.3-.3.5l-.4.5c-.2.2-.3.3-.1.6.2.2.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.3.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.1.5.2.6.4.1.2.1.8-.1 1.5z"/></svg>
+                    WhatsApp
+                </a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="rainbow-bar" aria-hidden="true"></div>
+    </header>
+
+    <!-- ===== HERO / BANNER ROTATIVO (OCUPA UMA DOBRA INTEIRA) ===== -->
+    <section class="hero-slider-section" id="inicio">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1: Foto 4 (apresentação inicia por aqui) -->
+            <div class="slide active">
+                <div class="slide-media">
+                    <img src="images/foto4.jpg" alt="Atendimento e Acessórios" loading="eager">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Localização Privilegiada
+                    </span>
+                    <h1>Estacionamento grátis <span class="grad-text">e fácil acesso</span></h1>
+                    <p class="hero-sub">R. Antonio Boiatti, 134 - Recanto Feliz, Paulínia - SP. Venha nos visitar!</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Falar no WhatsApp
+                        </a>
+                        <a href="#contato" class="btn btn-ghost">Como chegar ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Foto 5 -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto5.jpg" alt="Ambiente da loja Arco Iris Pet Shop" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Estrutura Completa
+                    </span>
+                    <h1>Um espaço <span class="grad-text">pensado para o seu pet</span></h1>
+                    <p class="hero-sub">Ambiente acolhedor e organizado para você e seu melhor amigo se sentirem em casa.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Agendar pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Ver serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Foto 6 -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto6.jpg" alt="Produtos e acessórios para pets" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Variedade Incrível
+                    </span>
+                    <h1>Tudo o que seu pet <span class="grad-text">precisa em um só lugar</span></h1>
+                    <p class="hero-sub">Rações, petiscos, brinquedos, acessórios e muito mais com preços justos.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Fazer Pedido
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Nossos serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Foto 7 -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto7.jpg" alt="Sessão de rações e alimentos" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Qualidade Garantida
+                    </span>
+                    <h1>As melhores <span class="grad-text">rações e marcas</span></h1>
+                    <p class="hero-sub">Encontre tudo para cães, gatos e animais de grande e pequeno porte com preços justos.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Fazer Pedido
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Nossos serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Foto 8 -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto8.jpg" alt="Equipe e atendimento Arco Iris" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Atendimento Dedicado
+                    </span>
+                    <h1>Carinho e atenção <span class="grad-text">do início ao fim</span></h1>
+                    <p class="hero-sub">Nossa equipe está pronta para atender você e seu pet da melhor maneira possível.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Falar no WhatsApp
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Ver serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Foto 9 -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto9.jpg" alt="Conforto e bem-estar para pets" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Conforto para o Pet
+                    </span>
+                    <h1>Bem-estar <span class="grad-text">em primeiro lugar</span></h1>
+                    <p class="hero-sub">Cuidados especiais para que seu pet se sinta feliz, saudável e muito confortável.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Agendar pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Ver serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Foto 1 (Fachada) -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto1.jpg" alt="Fachada Arco Iris Pet Shop em Paulínia" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        4,6 · 150 avaliações no Google
+                    </span>
+                    <h1>Amor de verdade <span class="grad-text">para o seu pet</span></h1>
+                    <p class="hero-sub">Ração, banho e tosa, acessórios e tudo o que seu melhor amigo precisa em <strong>Paulínia</strong>.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Agendar pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Ver serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Foto 2 -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto2.jpg" alt="Variedade em Rações e Produtos" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Qualidade Garantida
+                    </span>
+                    <h1>As melhores <span class="grad-text">rações e marcas</span></h1>
+                    <p class="hero-sub">Encontre tudo para cães, gatos e animais de grande e pequeno porte com preços justos.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Fazer Pedido
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Nossos serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Foto 3 -->
+            <div class="slide">
+                <div class="slide-media">
+                    <img src="images/foto3.jpg" alt="Banho e Tosa Profissional" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="badge">
+                        <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                        Cuidado Especial
+                    </span>
+                    <h1>Banho & Tosa <span class="grad-text">com muito carinho</span></h1>
+                    <p class="hero-sub">Profissionais dedicados para deixar seu pet limpinho, cheiroso e feliz.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">
+                            💬 Agendar Horário
+                        </a>
+                        <a href="#servicos" class="btn btn-ghost">Ver serviços ↓</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles do Slider -->
+        <button class="slider-btn prev-btn" id="prevSlide" aria-label="Slide anterior">❮</button>
+        <button class="slider-btn next-btn" id="nextSlide" aria-label="Próximo slide">❯</button>
+
+        <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+            <span class="dot" data-index="5"></span>
+            <span class="dot" data-index="6"></span>
+            <span class="dot" data-index="7"></span>
+            <span class="dot" data-index="8"></span>
+        </div>
+    </section>
+
+    <main>
+        <!-- ===== SERVIÇOS ===== -->
+        <section class="section" id="servicos">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Nossos serviços</span>
+                    <h2>O que oferecemos</h2>
+                    <p>Do banho ao ração, cuidado completo com qualidade e carinho.</p>
+                </div>
+                <div class="grid-services">
+                    <article class="service-card">
+                        <div class="service-icon icon-1"><span aria-hidden="true">🛒</span></div>
+                        <h3>Pet Shop</h3>
+                        <p>Rações, brinquedos, acessórios e higiene das melhores marcas, sempre com preço justo.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon icon-2"><span aria-hidden="true">🛁</span></div>
+                        <h3>Banho & Tosa</h3>
+                        <p>Equipe qualificada que deixa seu pet limpinho, cheiroso e super feliz.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon icon-3"><span aria-hidden="true">🚚</span></div>
+                        <h3>Entrega e Retirada</h3>
+                        <p>Compre na loja, retire na porta ou receba em casa. Experiência sem complicação.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon icon-4"><span aria-hidden="true">🐾</span></div>
+                        <h3>Variedade Total</h3>
+                        <p>Muitas opções de marcas e produtos para todas as necessidades do seu pet.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE ===== -->
+        <section class="section about" id="sobre">
+            <div class="container about-grid">
+                <div class="about-card-wrap">
+                    <div class="about-score">
+                        <span class="score-num">4,6</span>
+                        <div class="score-stars" aria-hidden="true">★★★★★</div>
+                        <p>Avaliação média no Google</p>
+                        <strong>150 avaliações</strong>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="eyebrow">Quem somos</span>
+                    <h2>Uma loja que trata seu pet como família</h2>
+                    <p>A <strong>Arco Iris Pet Shop</strong> é referência em Paulínia quando o assunto é cuidar de quem amamos. Combina produtos de qualidade com um atendimento que faz cada cliente voltar.</p>
+                    <p>Mais do que uma loja, somos um ponto de encontro de quem ama bichos. Nossa equipe dedicada garante a melhor experiência, do corredor ao banho.</p>
+                    <ul class="about-list">
+                        <li><span class="check" aria-hidden="true">✓</span> Atendimento humanizado e atencioso</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Acessível para cadeirantes</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Estacionamento coberto gratuito</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Ambiente amplo e confortável</li>
+                    </ul>
+                    <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-primary">Agendar banho & tosa</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DIFERENCIAIS ===== -->
+        <section class="section perks" id="diferenciais">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Por que nos escolher</span>
+                    <h2>Facilidade e comodidade para você</h2>
+                </div>
+                <div class="perks-grid">
+                    <div class="perk">
+                        <span class="perk-icon" aria-hidden="true">📦</span>
+                        <strong>Entrega</strong>
+                        <p>Receba sem sair de casa.</p>
+                    </div>
+                    <div class="perk">
+                        <span class="perk-icon" aria-hidden="true">🛍️</span>
+                        <strong>Retirada na loja</strong>
+                        <p>Rápida e descomplicada.</p>
+                    </div>
+                    <div class="perk">
+                        <span class="perk-icon" aria-hidden="true">💳</span>
+                        <strong>Vários pagamentos</strong>
+                        <p>Crédito, débito e NFC.</p>
+                    </div>
+                    <div class="perk">
+                        <span class="perk-icon" aria-hidden="true">🚙</span>
+                        <strong>Estacionamento grátis</strong>
+                        <p>Espaço coberto para você.</p>
+                    </div>
+                    <div class="perk">
+                        <span class="perk-icon" aria-hidden="true">♿</span>
+                        <strong>Acessibilidade</strong>
+                        <p>Espaço para todos.</p>
+                    </div>
+                    <div class="perk">
+                        <span class="perk-icon" aria-hidden="true">🧡</span>
+                        <strong>Atendimento nota 10</strong>
+                        <p>Clientes viram amigos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== AVALIAÇÕES ===== -->
+        <section class="section reviews" id="avaliacoes">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Depoimentos</span>
+                    <h2>Quem visita, recomenda</h2>
+                    <p>O carinho dos nossos clientes é o nosso maior prêmio.</p>
+                </div>
+                <div class="reviews-summary">
+                    <span class="score-num">4,6</span>
+                    <div class="score-stars" aria-hidden="true">★★★★★</div>
+                    <p>Baseado em <strong>150 avaliações</strong> no Google</p>
+                    <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver no Google</a>
+                </div>
+                <div class="grid-reviews">
+                    <figure class="review-card">
+                        <div class="review-head">
+                            <span class="avatar av-1">NE</span>
+                            <figcaption>
+                                <strong>Natal Menezes</strong>
+                                <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                            </figcaption>
+                        </div>
+                        <blockquote>“Excelente, tem de tudo para os pets.”</blockquote>
+                    </figure>
+                    <figure class="review-card">
+                        <div class="review-head">
+                            <span class="avatar av-2">DS</span>
+                            <figcaption>
+                                <strong>Diene Sa</strong>
+                                <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                            </figcaption>
+                        </div>
+                        <blockquote>“São pessoas maravilhosas, recomendo.”</blockquote>
+                    </figure>
+                    <figure class="review-card">
+                        <div class="review-head">
+                            <span class="avatar av-3">IE</span>
+                            <figcaption>
+                                <strong>Iara Esteves</strong>
+                                <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                            </figcaption>
+                        </div>
+                        <blockquote>“Bom preço, estacionamento próprio, muitas marcas e amei o serviço.”</blockquote>
+                    </figure>
+                    <figure class="review-card">
+                        <div class="review-head">
+                            <span class="avatar av-4">EF</span>
+                            <figcaption>
+                                <strong>Eliel Faber</strong>
+                                <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                            </figcaption>
+                        </div>
+                        <blockquote>“Só tenho elogios.”</blockquote>
+                    </figure>
+                    <figure class="review-card">
+                        <div class="review-head">
+                            <span class="avatar av-5">ES</span>
+                            <figcaption>
+                                <strong>Eduardo Silva</strong>
+                                <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                            </figcaption>
+                        </div>
+                        <blockquote>“Atendimento perfeito!”</blockquote>
+                    </figure>
+                    <figure class="review-card">
+                        <div class="review-head">
+                            <span class="avatar av-6">RN</span>
+                            <figcaption>
+                                <strong>Rodinei Nei</strong>
+                                <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                            </figcaption>
+                        </div>
+                        <blockquote>“Muito bom. Preços bons e variedade.”</blockquote>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VÍDEOS =====
+            COMO TROCAR OS VÍDEOS:
+            Cada <div class="video-item"> guarda um <iframe>. Para trocar, basta substituir o
+            atributo src do <iframe> pelo link/embed desejado.
+
+            - Facebook Reel/Watch: https://www.facebook.com/plugins/video.php?href=SEU_LINK_LIMPO (sem "?locale=...")
+              Ex.: https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F488052089621903&show_text=false&width=560
+            - Instagram: https://www.instagram.com/p/CODIGO/embed
+              Ex.: https://www.instagram.com/p/DZX50rfyr38/embed
+            - YouTube: https://www.youtube.com/embed/VIDEO_ID
+              Ex.: https://www.youtube.com/embed/dQw4w9WgXcQ
+
+            Para colocar uma LIVE ao vivo no site: preencha o atributo data-live-src no
+            bloco <div id="liveHolder"> logo abaixo. Quando vazio, mostra só o aviso.
+        -->
+        <section class="section videos" id="videos">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Redes sociais</p>
+                    <h2>Nossos vídeos</h2>
+                    <p class="section-sub">Confira um pouco do nosso dia a dia e o carinho com os pets.</p>
+                </div>
+
+                <!-- Área de LIVE (ao vivo) -->
+                <!-- Para ativar: troque data-live-src pelo embed da live (Facebook/YouTube). Ex.:
+                     data-live-src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2Fexplore&show_text=false&width=560" -->
+                <div id="liveHolder" data-live-src="" class="live-holder">
+                    <div class="live-banner" id="liveIdle">
+                        <span class="live-badge">🔴 AO VIVO</span>
+                        <p>Quando estivermos ao vivo nas redes, o vídeo aparecerá aqui no site.</p>
+                        <div class="live-links">
+                            <a href="https://www.facebook.com/arcoirispetshoppaulinia/?locale=pt_BR" target="_blank" rel="noopener">Acompanhar no Facebook</a>
+                            <a href="https://www.instagram.com/arcoirispetshopoficial/" target="_blank" rel="noopener">Acompanhar no Instagram</a>
+                        </div>
+                    </div>
+                    <div class="live-embed" id="liveEmbed" style="display:none;">
+                        <iframe id="liveFrame" width="100%" height="500" src="" style="border:none;overflow:hidden"
+                            scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            title="Transmissão ao vivo do Arco Iris Pet Shop"></iframe>
+                    </div>
+                </div>
+
+                <div class="videos-grid">
+                    <!-- Vídeo 1 (Facebook Reel) -->
+                    <div class="video-item">
+                        <div class="video-embed">
+                            <iframe id="video-frame-1"
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F488052089621903&show_text=false&width=560"
+                                width="560" height="314" style="border:none;overflow:hidden"
+                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                title="Vídeo 1 do Arco Iris Pet Shop"></iframe>
+                        </div>
+                    </div>
+                    <!-- Vídeo 2 (Facebook Reel) -->
+                    <div class="video-item">
+                        <div class="video-embed">
+                            <iframe id="video-frame-2"
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1556413998123558&show_text=false&width=560"
+                                width="560" height="314" style="border:none;overflow:hidden"
+                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                title="Vídeo 2 do Arco Iris Pet Shop"></iframe>
+                        </div>
+                    </div>
+                    <!-- Vídeo 3 (Facebook Reel) -->
+                    <div class="video-item">
+                        <div class="video-embed">
+                            <iframe id="video-frame-3"
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1532150988281123&show_text=false&width=560"
+                                width="560" height="314" style="border:none;overflow:hidden"
+                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                title="Vídeo 3 do Arco Iris Pet Shop"></iframe>
+                        </div>
+                    </div>
+                    <!-- Vídeo 4 (Facebook Reel) -->
+                    <div class="video-item">
+                        <div class="video-embed">
+                            <iframe id="video-frame-4"
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F945539968543500&show_text=false&width=560"
+                                width="560" height="314" style="border:none;overflow:hidden"
+                                scrolling="no" frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                title="Vídeo 4 do Arco Iris Pet Shop"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="cta-strip">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Quer deixar seu pet ainda mais feliz?</h2>
+                    <p>Chame no WhatsApp e agende seu horário em minutos.</p>
+                </div>
+                <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="btn btn-light">Conversar agora 💬</a>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO ===== -->
+        <section class="section contact" id="contato">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Visite-nos</span>
+                    <h2>Estamos esperando por você</h2>
+                    <p>Fale conosco ou venha nos conhecer de pertinho.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="info-icon" aria-hidden="true">📍</span>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>R. Antonio Boiatti, 134 - Recanto Feliz<br>Paulínia - SP, 13144-703</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon" aria-hidden="true">📞</span>
+                            <div>
+                                <strong>Telefone / WhatsApp</strong>
+                                <p><a href="https://wa.me/5519974197990" target="_blank" rel="noopener">(19) 97419-7990</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon" aria-hidden="true">🕘</span>
+                            <div>
+                                <strong>Horário de funcionamento</strong>
+                                <p>Seg a Sex: 08h às 18h<br>Sáb: 08h às 18h</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon" aria-hidden="true">🧭</span>
+                            <div>
+                                <strong>Código Plus</strong>
+                                <p>6RR4+QQ Recanto Feliz, Paulínia - SP</p>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Arco+Iris+Pet+Shop+Antonio+Boiatti+134+Paul%C3%ADnia" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+                            🗺️ Como chegar
+                        </a>
+                    </div>
+                    <div class="contact-form-card">
+                        <h3>Envie sua mensagem</h3>
+                        <p>Preencha e enviaremos direto para o nosso WhatsApp.</p>
+                        <form id="contactForm" class="form" novalidate>
+                            <div class="field">
+                                <label for="nome">Seu nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Como podemos chamar você?" required>
+                            </div>
+                            <div class="field">
+                                <label for="telefone">Telefone / WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(19) 90000-0000" required>
+                            </div>
+                            <div class="field">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Ex.: Quero agendar um banho para meu cachorro..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar pelo WhatsApp 💬
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== MAPA ===== -->
+    <section class="map" aria-label="Localização no mapa">
+        <iframe
+            title="Mapa - Arco Iris Pet Shop em Paulínia"
+            src="https://www.google.com/maps?q=Arco+Iris+Pet+Shop+Antonio+Boiatti+134+Paul%C3%ADnia&output=embed"
+            width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#topo" class="logo footer-logo">
+                <img src="LOGO.png" alt="Logotipo Agropecuária Arco Iris" class="logo-img">
+            </a>
+            <p class="footer-tag">Tudo para o seu melhor amigo, com amor e qualidade.</p>
+            <nav class="footer-nav" aria-label="Links do rodapé">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="footer-contact">
+                <a href="https://wa.me/5519974197990" target="_blank" rel="noopener">(19) 97419-7990</a>
+                <span aria-hidden="true">·</span>
+                <span>R. Antonio Boiatti, 134 - Paulínia - SP</span>
+            </div>
+
+            <div class="social-icons footer-social" aria-label="Redes sociais e loja">
+                <a href="https://www.instagram.com/arcoirispetshopoficial/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" title="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.facebook.com/arcoirispetshoppaulinia/?locale=pt_BR" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" title="Facebook">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.arcoirispetshop.com.br" target="_blank" rel="noopener" class="social-icon social-shop" aria-label="Loja online" title="Nossa loja">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </a>
+            </div>
+
+            <!-- Publicidade parceiro: Licenciamento de Bombeiro -->
+            <aside class="footer-ad" aria-label="Publicidade">
+                <p class="footer-ad-text">
+                    <span class="footer-ad-badge" aria-hidden="true">🏆</span>
+                    Faça seu <strong>licenciamento de bombeiro</strong> ou renovação do certificado com especialista
+                    <strong>engenheiro Strabelli</strong>.<br>
+                    <em>Orçamento sem compromisso.</em>
+                    <a href="https://wa.me/5519981980691" target="_blank" rel="noopener" class="footer-ad-link">
+                        &#128172; WhatsApp (19) 98198-0691
+                    </a>
+                </p>
+            </aside>
+
+            <p class="footer-copy">© <span id="year"></span> Arco Iris Pet Shop · Todos os direitos reservados.</p>
+            <a href="admin.html" rel="noopener" class="footer-admin" aria-label="Área administrativa">⚙ Admin</a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5519974197990" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.5.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.4-.7-2.9-1-4.7-3.5-4.9-3.7-.2-.2-1.2-1.5-1.2-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .4-.1.2-.1.3-.3.5l-.4.5c-.2.2-.3.3-.1.6.2.2.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.3.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.1.5.2.6.4.1.2.1.8-.1 1.5z"/></svg>
+    </a>
+
+    <script>
+        // Área de LIVE: se o dono preencheu data-live-src no #liveHolder, mostra o vídeo ao vivo.
+        (function () {
+            var holder = document.getElementById('liveHolder');
+            if (!holder) return;
+            var liveSrc = holder.getAttribute('data-live-src');
+            if (liveSrc && liveSrc.trim() !== '') {
+                var frame = document.getElementById('liveFrame');
+                var embed = document.getElementById('liveEmbed');
+                var idle = document.getElementById('liveIdle');
+                if (frame) frame.src = liveSrc.trim();
+                if (embed) embed.style.display = 'block';
+                if (idle) idle.style.display = 'none';
+            }
+        })();
+    </script>
+    <!-- api.js DEVE vir antes do script.js (camada de backend/fallback) -->
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

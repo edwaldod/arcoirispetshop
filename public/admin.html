@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin · Arco Iris Pet Shop</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- ===== TELA DE LOGIN ===== -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <div class="login-logo">🐾</div>
+            <h1>Painel Administrativo</h1>
+            <p class="login-sub">Arco Iris Pet Shop</p>
+            <form id="loginForm" autocomplete="off">
+                <label for="loginUser">Usuário</label>
+                <input type="text" id="loginUser" placeholder="admin" required>
+
+                <label for="loginPass">Senha</label>
+                <input type="password" id="loginPass" placeholder="••••••" required>
+
+                <button type="submit" class="btn btn-login">Entrar</button>
+                <p class="login-error" id="loginError" hidden>Usuário ou senha inválidos.</p>
+            </form>
+            <a href="index.html" class="back-link">← Voltar ao site</a>
+        </div>
+    </div>
+
+    <!-- ===== PAINEL (SÓ APARECE APÓS LOGIN) ===== -->
+    <div class="panel" id="panel" hidden>
+        <header class="panel-header">
+            <div class="container">
+                <div class="panel-header-inner">
+                    <strong>🐾 Admin · Arco Iris Pet Shop</strong>
+                    <div class="panel-user">
+                        <span id="userLabel">admin</span>
+                        <button class="btn btn-logout" id="logoutBtn">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="tab-bar">
+                <button class="tab active" data-tab="slider">Banner Rotativo</button>
+                <button class="tab" data-tab="videos">Vídeos</button>
+                <button class="tab" data-tab="media">Galeria de Mídias</button>
+            </div>
+
+            <!-- ===== GUIA: BANNER ROTATIVO ===== -->
+            <section class="tab-panel active" id="tab-slider">
+                <div class="panel-head">
+                    <h2>Slides do Banner <span class="count-badge" id="slidesCount"></span></h2>
+                    <p>Preencha os <strong>9 espaços abaixo</strong> (Banner 1 a Banner 9). Cada banner pode ser trocado/editado individualmente.</p>
+                    <a href="index.html#inicio" target="_blank" class="preview-link">👁 Ver site</a>
+                </div>
+
+                <div class="slides-manager" id="slidesManager">
+                    <!-- 9 slots de banner renderizados via JS -->
+                </div>
+            </section>
+
+            <!-- ===== GUIA: VÍDEOS ===== -->
+            <section class="tab-panel" id="tab-videos">
+                <div class="panel-head">
+                    <h2>Vídeos da seção</h2>
+                    <p>Gerencie os <strong>4 vídeos</strong> exibidos na seção "Nossos vídeos". Cole o link do Facebook, Instagram ou YouTube em cada um.</p>
+                    <a href="index.html#videos" target="_blank" class="preview-link">👁 Ver seção no site</a>
+                </div>
+
+                <div class="videos-editor" id="videosEditor">
+                    <!-- 4 editores de vídeo renderizados via JS -->
+                </div>
+
+                <p class="hint">Dica: você pode colar o link normal do post/reel/vídeo (ex.: https://www.facebook.com/reel/123456 ou https://www.instagram.com/p/ABC123/ ou https://www.youtube.com/watch?v=ID). O sistema converte automaticamente para a versão incorporável (embed).</p>
+            </section>
+
+            <!-- ===== GUIA: GALERIA DE MÍDIAS ===== -->
+            <section class="tab-panel" id="tab-media">
+                <div class="panel-head">
+                    <h2>Biblioteca de Mídias</h2>
+                    <p>Arquivos disponíveis para uso nos slides (imagens e vídeos).</p>
+                </div>
+
+                <div class="upload-zone" id="uploadZone">
+                    <p>📁 Arraste arquivos aqui ou clique para enviar</p>
+                    <input type="file" id="fileInput" multiple hidden
+                           accept="image/*,video/mp4,video/webm,video/ogg">
+                </div>
+
+                <div class="media-grid" id="mediaGrid">
+                    <!-- Mídias renderizadas via JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal de edição de slide -->
+    <div class="modal" id="slideModal" hidden>
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+            <h3 id="modalTitle">Editar slide</h3>
+            <form id="slideForm">
+                <label for="slideType">Tipo</label>
+                <select id="slideType">
+                    <option value="image">Imagem (foto)</option>
+                    <option value="video">Vídeo</option>
+                </select>
+
+                <label for="slideMedia">Imagem ou Vídeo</label>
+                <div class="media-pick" id="mediaPick">
+                    <select id="slideMediaSelect">
+                        <option value="">— Selecione uma mídia da biblioteca —</option>
+                    </select>
+                    <p class="hint">Ou cole um URL externo (YouTube/Drive/imagem):</p>
+                    <input type="url" id="slideMediaUrl" placeholder="https://...">
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-danger" id="deleteSlideBtn">Excluir</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" hidden></div>
+
+    <!-- api.js DEVE vir antes do admin.js (camada de backend/fallback) -->
+    <script src="api.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
